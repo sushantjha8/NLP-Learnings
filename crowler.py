@@ -7,6 +7,16 @@ import csv
 
 source = requests.get('https://www.drugs.com/search.php?searchterm=Jardiance&a=1').text
 
+#-------Or ---------
+'''
+        TODO:
+                we need extract information on based of word tokens
+                as example performed ..
+                to rin un comment both uncomented line and comment line 8
+                '''
+#search_word=['Jardiance','side effects']
+#source = requests.get('https://www.drugs.com/search.php?searchterm='+str(search_word)).text
+
 soup = BeautifulSoup(source, 'lxml')
 
 
